@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 import { Hero } from '../hero';
+import { HEROES } from '../mock-heroes';
 
 @Component({
   // the component CSS element selector
@@ -16,8 +17,17 @@ export class HeroesComponent implements OnInit {
     name: 'Superman'
   };
 
+  heroes = HEROES;
+
   constructor() {
 
+  }
+
+  selectedHero: Hero;
+
+  onSelect(hero: HERO): void {
+    this.selectedHero = hero;
+    // alert(hero.name)
   }
 
   ngOnInit() {
