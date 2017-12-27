@@ -1,3 +1,15 @@
 ul.list-hero li {
     padding: 7px 8px;
 }
+
+li.item-hero {
+    margin: 10px 0;
+    background: #1976D2;
+    color: #fff;
+}
+
+li.item-hero:hover {
+    background: #E3F2FD;
+    color:#000;
+    cursor: pointer;
+}
